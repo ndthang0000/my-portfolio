@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
@@ -91,7 +90,15 @@ const Introduce: React.FC = () => {
           Currently, I&apos;m a Software Engineer at Gameloft
         </p>
         <p className="text-base lg:text-lg font-light lg:w-[900px]">
-          - Experienced Node.js Backend Developer with 3 years of hands-on experience in designing, developing, and maintaining server-side applications. Proficient in building scalable RESTful APIs, managing databases, and deploying applications in cloud environments. Strong knowledge of JavaScript, Express.js, and databases like MongoDB and PostgreSQL. Adept at working in agile teams, collaborating with front-end developers, and delivering reliable, maintainable code. Passionate about optimizing performance, improving code quality, and learning new technologies.
+          - Experienced Node.js Backend Developer with 3 years of hands-on
+          experience in designing, developing, and maintaining server-side
+          applications. Proficient in building scalable RESTful APIs, managing
+          databases, and deploying applications in cloud environments. Strong
+          knowledge of JavaScript, Express.js, and databases like MongoDB and
+          PostgreSQL. Adept at working in agile teams, collaborating with
+          front-end developers, and delivering reliable, maintainable code.
+          Passionate about optimizing performance, improving code quality, and
+          learning new technologies.
         </p>
       </div>
     </div>
