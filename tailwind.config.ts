@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        customGradientStart: '#763CAC',  // Coral
-        customGradientEnd: '#320F85',    // DeepPink
+        customGradientStart: '#763CAC', // Coral
+        customGradientEnd: '#320F85', // DeepPink
         primary: 'var(--primary-color)',
       },
     },
