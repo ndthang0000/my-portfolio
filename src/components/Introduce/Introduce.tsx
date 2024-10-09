@@ -11,7 +11,7 @@ const Introduce: React.FC = () => {
       ></div> */}
       <div className="flex mb-24 mt-24 items-center gap-10 lg:flex-row flex-col">
         <div className="px-4 w-full relative lg:w-[385px] lg:h-[431px] flex justify-center ">
-          <div className="absolute z-10 right-16 -top-12 md:right-10 md:top-10">
+          <div className="absolute z-10 right-16 -top-12 md:right-56 md:-top-12 lg:right-16 lg:-top-12">
             <Image
               alt="avatar"
               width={91}
@@ -19,11 +19,12 @@ const Introduce: React.FC = () => {
               src={'/images/arrow.png'}
               quality={100}
             />
-            <div className="absolute -top-5 left-10 w-32 md:w-40">
+            <div className="absolute md:w-40 w-32 -top-5 left-10">
               <Typewriter
                 options={{
                   strings: [
                     'Hello, I am <span class="text-primary">Thang Nguyen</span>',
+                    '<span class="text-primary">Welcome to my portfolio!</span>',
                   ],
                   autoStart: true,
                   loop: true,

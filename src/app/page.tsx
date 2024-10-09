@@ -1,9 +1,10 @@
+import Header from '@/components/header/Header';
 import Introduce from '@/components/Introduce/Introduce';
 
 export default function Home() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <div className="container mx-auto mt-20">
         <Introduce />
       </div>
