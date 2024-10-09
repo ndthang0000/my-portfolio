@@ -11,7 +11,7 @@ const Introduce: React.FC = () => {
       ></div> */}
       <div className="flex mb-24 mt-24 items-center gap-10 lg:flex-row flex-col">
         <div className="px-4 w-full relative lg:w-[385px] lg:h-[431px] flex justify-center ">
-          <div className="absolute z-10 right-16 -top-12 md:right-56 md:-top-12 lg:right-16 lg:-top-12">
+          <div className="absolute z-10 right-16 -top-12 md:right-56 md:-top-12 lg:right-16 lg:top-2">
             <Image
               alt="avatar"
               width={91}
@@ -24,7 +24,7 @@ const Introduce: React.FC = () => {
                 options={{
                   strings: [
                     'Hello, I am <span class="text-primary">Thang Nguyen</span>',
-                    '<span class="text-primary">Welcome to my portfolio!</span>',
+                    'Welcome to my <span class="text-primary"> portfolio!</span>',
                   ],
                   autoStart: true,
                   loop: true,
