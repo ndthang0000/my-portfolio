@@ -1,15 +1,41 @@
+'use client'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Typewriter from 'typewriter-effect';
+
 
 const Introduce: React.FC = () => {
   return (
     <div className='px-4'>
+
+
       {/* <div className="h-48 w-40 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-customGradientStart to-customGradientEnd via-customGradientEnd"
       ></div> */}
-      <div className='flex mb-24 items-center gap-10 lg:flex-row flex-col'>
+      <div className='flex mb-24 mt-24 items-center gap-10 lg:flex-row flex-col'>
 
         <div className='px-4 w-full relative lg:w-[385px] lg:h-[431px] flex justify-center '>
+          <div className='absolute z-10 right-16 -top-12 md:right-10 md:top-10'>
+            <Image
+              alt='avatar'
+              width={91}
+              height={81}
+              src={'/images/arrow.png'}
+              quality={100}
+
+            />
+            <div className='absolute -top-5 left-10 w-32 md:w-40'>
+              <Typewriter
+                options={{
+                  strings: ['Hello, I am <span class="text-primary">Thang Nguyen</span>',],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
+          </div>
+
+
           <Image
             alt='avatar'
             width={385}
@@ -17,7 +43,9 @@ const Introduce: React.FC = () => {
             src={'/images/gradient-avatar.png'}
             quality={100}
             className='absolute m-auto left-0 right-0 top-0 bottom-0 -z-10'
-          />
+          >
+
+          </Image>
           <Image
             alt='avatar'
             width={260}
@@ -32,19 +60,19 @@ const Introduce: React.FC = () => {
             height={223}
             src={'/images/avatar.png'}
             quality={100}
-            className='my-auto'
+            className='my-auto lg:w-[165px] lg:h-[223px] w-[130px] h-[180px]'
           />
 
 
         </div>
         <div className='lg:w-[400px] w-full'>
           <div className='text-base py-2'>A Designer who</div>
-          <p className='lg:text-5xl py-4 text-3xl'>Judges a book by its {' '}
-            <span className='text-primary relative px-2 py-2'>
+          <p className='lg:text-5xl py-4 text-4xl'>Judges a book by its {' '}
+            <span className='text-primary relative mx-4 my-4'>
               cover
               <svg
                 className='absolute m-auto -left-5 right-20 top-0 bottom-0 -z-10'
-                width="189"
+                width="180"
                 height="55"
                 viewBox="0 0 189 61"
                 fill="none"
