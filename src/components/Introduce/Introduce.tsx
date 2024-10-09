@@ -88,21 +88,10 @@ const Introduce: React.FC = () => {
       <div>
         <p className="lg:text-5xl text-3xl">I&apos;m a Software Engineer.</p>
         <p className="text-base mb-16">
-          Currently, I&apos;m a Software Engineer at
-          <Link href={'http://gameloft.com'} target="_blank">
-            <Image
-              src={'/images/gameloft.png'}
-              width={40}
-              height={40}
-              alt="gameloft"
-            />
-          </Link>
-          Gameloft
+          Currently, I&apos;m a Software Engineer at Gameloft
         </p>
         <p className="text-base lg:text-lg font-light lg:w-[900px]">
-          A self-taught UI/UX designer, functioning in the industry for 3+ years
-          now. I make meaningful and delightful digital products that create an
-          equilibrium between user needs and business goals.
+          - Experienced Node.js Backend Developer with 3 years of hands-on experience in designing, developing, and maintaining server-side applications. Proficient in building scalable RESTful APIs, managing databases, and deploying applications in cloud environments. Strong knowledge of JavaScript, Express.js, and databases like MongoDB and PostgreSQL. Adept at working in agile teams, collaborating with front-end developers, and delivering reliable, maintainable code. Passionate about optimizing performance, improving code quality, and learning new technologies.
         </p>
       </div>
     </div>
