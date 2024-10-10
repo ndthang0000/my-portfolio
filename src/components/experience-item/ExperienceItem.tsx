@@ -21,9 +21,9 @@ const ExperienceItem = ({
   position,
   website,
 }: ExperienceItemProps) => {
-  const a = [266, 90, 45, 75, 60, 30, 120, 150, 180, 210, 240, 300, 330, 360];
-  const randomDegree = a[Math.floor(Math.random() * 4)];
-  const className = `h-[160px] md:h-[192px] border-t-[6px] border-[#693B93] rounded-2xl bg-[linear-gradient(${randomDegree}deg,rgba(19,4,40,1)0%,rgba(37,16,67,1)34%,rgba(56,18,109,1)57%,rgba(38,16,69,1)85%,rgba(25,6,52,1)100%)]`;
+  // const a = [266, 90, 45, 75, 60, 30, 120, 150, 180, 210, 240, 300, 330, 360];
+  // const randomDegree = a[Math.floor(Math.random() * 4)];
+  const className = `h-[160px] md:h-[192px] border-t-[6px] border-[#693B93] rounded-2xl bg-[linear-gradient(266deg,rgba(19,4,40,1)0%,rgba(37,16,67,1)34%,rgba(56,18,109,1)57%,rgba(38,16,69,1)85%,rgba(25,6,52,1)100%)]`;
 
   const handleHover = () => {};
 

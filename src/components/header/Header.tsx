@@ -4,7 +4,7 @@ import styles from './index.module.css';
 const Header: React.FC = () => {
   return (
     <div style={{ backgroundColor: 'var(--header-bg-color)' }}>
-      <header className="container flex items-center justify-center sm:justify-between md:h-[113px] h-[80px] px-6 mx-auto">
+      <header className="container flex items-center justify-center sm:justify-between lg:h-[113px] h-[80px] px-6 mx-auto">
         <div className="text-white font-bold text-xl hidden sm:block">
           <Image
             alt="logo"
