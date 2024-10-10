@@ -2,6 +2,7 @@ import ExperienceItem from '@/components/experience-item/ExperienceItem';
 import Header from '@/components/header/Header';
 import Introduce from '@/components/Introduce/Introduce';
 import Image from 'next/image';
+import Contact from '../components/contact/Contact';
 
 const initExperience = [
   {
@@ -51,6 +52,7 @@ export default function Home() {
             height={700}
             className="absolute -z-10 m-auto left-0 right-0 top-0 bottom-0 opacity-60"
           />
+          <Contact />
           <h2 className="sm:text-4xl text-2xl mb-10">
             Professional Experience
           </h2>

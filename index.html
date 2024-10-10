@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="w-full flex justify-center gap-3 py-6">
+    <!-- Show tooltip on top -->
+    <div class="relative inline-block">
+      <button class="bg-red-100 inline-flex rounded text-base font-semibold text-black whitespace-nowrap" data-tooltip-target="top-tooltip">
+        Tooltip on top
+      </button>
+      <div class="absolute bottom-full invisible left-1/2 z-20 mb-3 -translate-x-1/2 whitespace-nowrap rounded-md bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 border border-gray-300 shadow-[0px_12px_30px_-4px_rgba(16,24,40,0.08);]" role="tooltip" id="top-tooltip">
+        <span class="absolute -bottom-1.5 left-1/2 -z-10 h-3 w-3 border-b border-r border-gray-300 -translate-x-1/2 rotate-45  bg-white"></span>
+        This is a tooltip
+      </div>
+    </div>
+    <!-- Show tooltip on right -->
+    <div class="relative inline-block">
+      <button class="bg-primary inline-flex rounded text-base font-semibold text-black whitespace-nowrap" data-tooltip-target="right-tooltip">
+        Tooltip on right
+      </button>
+      <div class="absolute left-full invisible top-1/2 z-20 ml-3 -translate-y-1/2 border border-gray-300 whitespace-nowrap rounded-md bg-white py-3 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[-12px_0px_30px_-4px_rgba(16,24,40,0.08)]" role="tooltip" id="right-tooltip">
+        <span class="absolute -left-1.5 top-1/2 -z-10 h-3 w-3 border-gray-300 border-b border-l -translate-y-1/2 rotate-45  bg-white"></span>
+        This is a tooltip
+      </div>
+    </div>
+    <!-- Show tooltip on bottom -->
+    <div class="relative inline-block">
+      <button class="bg-primary inline-flex rounded text-base font-semibold text-black whitespace-nowrap" data-tooltip-target="bottom-tooltip">
+        Tooltip on bottom
+      </button>
+      <div class="absolute top-full invisible left-1/2 z-20 mt-3 border border-gray-300 -translate-x-1/2 whitespace-nowrap rounded-md bg-white py-2 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[0px_-12px_30px_-4px_rgba(16,24,40,0.08)]" role="tooltip" id="bottom-tooltip">
+        <span class="absolute -top-1.5 left-1/2 -z-10 h-3 w-3  border-t border-l rounded-sm border-gray-300 -translate-x-1/2 rotate-45 bg-white"></span>
+        This is a tooltip
+      </div>
+    </div>
+    <!-- Show tooltip on left -->
+    <div class="relative inline-block">
+      <button class="bg-green-500 inline-flex rounded text-base font-semibold text-black whitespace-nowrap" data-tooltip-target="left-tooltip">
+        Tooltip on left
+      </button>
+      <div class="absolute right-full invisible top-1/2 z-20 mr-3 -translate-y-1/2  whitespace-nowrap rounded-md bg-white py-3 border border-gray-300 px-4 text-xs text-gray-800 font-medium transition-opacity duration-300 shadow-[12px_0px_30px_-4px_rgba(16,24,40,0.08)]" role="tooltip" id="left-tooltip">
+        <span class="absolute -right-1.5 top-1/2 -z-10 h-3 w-3 -translate-y-1/2 rotate-45 rounded-sm bg-white border-t border-r border-gray-300"></span>
+        This is a tooltip
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
