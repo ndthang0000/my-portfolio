@@ -56,7 +56,7 @@ const ExperienceItem = ({
             <Link
               href={website}
               target="_blank"
-              className="cursor-pointer bg-[#2C1250] rounded-2xl border-[#9252ce] border-2 md:px-4 px-2 py-3 md:py-4 mt-2 w-52 text-center justify-center hover:border-primary"
+              className="cursor-pointer bg-[#2C1250] rounded-2xl border-[#9252ce] border-2 md:px-4 px-2 py-2 md:py-4 mt-2 w-40 text-center justify-center hover:border-primary"
             >
               <span className="text-sm sm:text-base">Visit website</span>
             </Link>

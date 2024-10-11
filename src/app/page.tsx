@@ -3,6 +3,7 @@ import Header from '@/components/header/Header';
 import Introduce from '@/components/Introduce/Introduce';
 import Image from 'next/image';
 import Contact from '../components/contact/Contact';
+import Skill from '@/components/skill/Skill';
 
 const initExperience = [
   {
@@ -52,7 +53,7 @@ export default function Home() {
             alt="gradient color"
             width={625}
             height={700}
-            className="absolute -z-10 m-auto left-0 right-0 top-0 bottom-0"
+            className="absolute -z-10 m-auto left-0 top-0 right-0"
           />
           <Contact />
           <h2 className="sm:text-4xl text-2xl mb-10">
@@ -63,6 +64,7 @@ export default function Home() {
               <ExperienceItem key={index} {...item} />
             ))}
           </div>
+          <Skill />
         </div>
       </div>
     </div>
