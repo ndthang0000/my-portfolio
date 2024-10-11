@@ -42,9 +42,9 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="container mx-auto mt-20">
+      <div className="container mx-auto mt-20 lg:px-6 px-4 ">
         <Introduce />
-        <div className="mt-24 px-4 relative">
+        <div className="mt-24 relative">
           <Image
             src={'/images/gradient-avatar.png'}
             alt="gradient color"

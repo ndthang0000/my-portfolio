@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 
 const Introduce: React.FC = () => {
   return (
-    <div className="px-4">
+    <div>
       {/* <div className="h-48 w-40 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-customGradientStart to-customGradientEnd via-customGradientEnd"
       ></div> */}
       <div className="flex mb-24 mt-24 items-center gap-10 lg:flex-row flex-col">
