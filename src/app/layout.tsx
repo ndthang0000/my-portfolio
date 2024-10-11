@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Preahvihear } from 'next/font/google';
+import { Preahvihear, Poppins } from 'next/font/google';
 import './globals.css';
 
 const preahvihear = Preahvihear({
@@ -7,6 +7,13 @@ const preahvihear = Preahvihear({
   weight: ['400'],
   style: 'normal',
   variable: '--preahvihear-font',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: 'normal',
+  variable: '--poppins-font',
 });
 
 export const metadata: Metadata = {
@@ -21,7 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${preahvihear.className} antialiased`}>{children}</body>
+      <body
+        className={`${preahvihear.className} ${poppins.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

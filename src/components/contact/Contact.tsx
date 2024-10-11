@@ -9,11 +9,11 @@ const Contact = () => {
   return (
     <div className="text-center mb-24">
       <div className="sm:text-4xl text-2xl flex justify-center gap-2 items-center">
-        <MagnifyingGlass size={32} color="#7127BA" stroke="10px" />
+        <MagnifyingGlass size={32} color="#9e61e9" stroke="10px" />
         <h2>FIND ME ON</h2>
       </div>
       <p>
-        Feel free to <span className="text-primary">connect</span> with me
+        Feel free to <span className="text-[#9e61e9]">connect</span> with me
       </p>
       <div className="flex justify-center gap-6 mt-4">
         <div className="bg-primary p-1 rounded-full">
