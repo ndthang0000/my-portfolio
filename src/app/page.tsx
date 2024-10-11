@@ -10,15 +10,15 @@ const initExperience = [
     name: 'Pi solution',
     position: 'Junior Backend Nodejs Developer',
     website: 'https://pisolution.co/',
-    from: '2/2022',
-    to: '6/2023',
+    from: '02/2022',
+    to: '06/2023',
   },
   {
     image: '/images/dayone-logo.png',
     name: 'DayoneTeams',
     position: 'Junior Web Engineer',
     website: 'https://dayoneteams.com/',
-    from: '8/2023',
+    from: '08/2023',
     to: '10/2023',
   },
   {
@@ -26,15 +26,17 @@ const initExperience = [
     name: 'Gameloft',
     position: 'Middle Backend Developer',
     website: 'https://www.gameloft.com/',
-    from: '1/2024',
+    from: '01/2024',
     to: 'Now',
+    isHighlight: true,
   },
   {
     image: '/images/freeclance-logo.png',
     name: 'Freelancer',
     position: 'Fullstack Developer',
-    from: '6/2023',
+    from: '06/2023',
     to: 'Now',
+    isHighlight: true,
   },
 ];
 
@@ -50,13 +52,13 @@ export default function Home() {
             alt="gradient color"
             width={625}
             height={700}
-            className="absolute -z-10 m-auto left-0 right-0 top-0 bottom-0 opacity-60"
+            className="absolute -z-10 m-auto left-0 right-0 top-0 bottom-0"
           />
           <Contact />
           <h2 className="sm:text-4xl text-2xl mb-10">
             Professional Experience
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10 mb-24 gap-6">
             {initExperience.map((item, index) => (
               <ExperienceItem key={index} {...item} />
             ))}
