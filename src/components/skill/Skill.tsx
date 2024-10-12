@@ -59,6 +59,10 @@ const listSkill = [
     image: '/tech-skill/rabbitmq.png',
     name: 'rabbitmq',
   },
+  {
+    image: '/tech-skill/socket-io.png',
+    name: 'socket-io',
+  },
 ];
 
 const Skill = () => {
