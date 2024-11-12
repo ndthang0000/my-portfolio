@@ -4,6 +4,7 @@ import Introduce from '@/components/Introduce/Introduce';
 import Image from 'next/image';
 import Contact from '../components/contact/Contact';
 import Skill from '@/components/skill/Skill';
+import ProjectList from '@/components/project/ProjectList';
 
 const initExperience = [
   {
@@ -65,6 +66,7 @@ export default function Home() {
             ))}
           </div>
           <Skill />
+          <ProjectList />
         </div>
       </div>
     </div>
