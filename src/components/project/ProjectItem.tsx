@@ -1,42 +1,45 @@
 import Image from 'next/image';
 import React from 'react';
 
-const ProjectItem = () => {
+type ProjectItemProps = {
+  domain: string;
+  title: string;
+  description: string;
+  image: string;
+  imageWidth: number;
+  techStack: string[];
+};
+
+const ProjectItem = (data: ProjectItemProps) => {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row lg:items-center gap-4 mb-12">
       <div className="lg:w-1/2">
-        <h4 className="text-primary">Gamefi NFT</h4>
-        <h2 className="text-2xl">Herobook</h2>
+        <h4 className="text-primary">{data.domain}</h4>
+        <h2 className="text-2xl">{data.title}</h2>
         <div className="leading-6 shadow-inner rounded-2xl px-6 py-4 text-sm bg-[linear-gradient(266deg,rgba(105,59,147,0.4)0%,rgba(110,191,244,0.22)77%,rgba(70,144,212,0)100%)]">
-          A web app for visualizing personalized Spotify data. View your top
-          artists, top tracks, recently played tracks, and detailed audio
-          information about each track. Create and save new playlists of
-          recommended tracks based on your existing playlists and more.
+          {data.description}
         </div>
         <div>
           <div className="flex justify-center w-10 h-10 lg:w-16 lg:h-16 rounded-full">
-            <Image
-              src={'/tech-skill/nextjs.png'}
-              width={24}
-              height={24}
-              alt={'skill'}
-              className="self-center w-[24px] lg:w-[36px]"
-            />
-            <Image
-              src={'/tech-skill/mongodb.png'}
-              width={24}
-              height={24}
-              alt={'skill'}
-              className="self-center w-[24px] lg:w-[36px]"
-            />
+            {data.techStack.map((tech, index) => (
+              <Image
+                key={index}
+                src={`/tech-skill/${tech}.png`}
+                width={24}
+                height={24}
+                alt={tech}
+                className="self-center w-[24px] lg:w-[36px]"
+              />
+            ))}
           </div>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative lg:w-[400px] flex justify-center">
         <Image
-          src={'/images/laptop-herobook.png'}
-          width={400}
+          src={data.image}
+          width={data.imageWidth || 400}
           height={200}
+          quality={100}
           alt={'laptop'}
           className=""
         />
