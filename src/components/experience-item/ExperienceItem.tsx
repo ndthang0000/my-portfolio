@@ -39,13 +39,13 @@ const ExperienceItem = ({
           width={120}
           height={120}
           alt="name"
-          className="mx-4 md:mx-8 w-[80px] md:w-[120px]"
+          className="mx-4 md:mx-8 w-[60px] md:w-[120px]"
         />
         <div
           className={`flex flex-col gap-1 ${isHighlight ? 'text-stroke text-stroke-primary' : ''}`}
         >
           <h3
-            className={`text-white  font-poppins font-semibold md:text-3xl text-2xl`}
+            className={`text-white  font-poppins font-semibold lg:text-3xl md:text-2xl text-xl`}
           >
             {name}
           </h3>

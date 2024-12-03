@@ -89,7 +89,7 @@ const Introduce: React.FC = () => {
         <p className="text-base mb-16">
           Currently, I&apos;m a Software Engineer at Gameloft
         </p>
-        <p className="text-base lg:text-lg font-light lg:w-[900px]">
+        <p className="text-sm md:text-base lg:text-lg font-light lg:w-[900px]">
           - Experienced Node.js Backend Developer with 3 years of hands-on
           experience in designing, developing, and maintaining server-side
           applications. Proficient in building scalable RESTful APIs, managing
