@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           />
         </div>
         <nav>
-          <ul className="flex sm:space-x-24 flex-1 space-x-12">
+          <ul className="flex sm:space-x-24 flex-1 space-x-8">
             <li
               className={`${styles['custom-header-item']} text-white hover:text-gray-300 cursor-pointer`}
             >
