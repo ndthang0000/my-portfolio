@@ -8,7 +8,7 @@ const data = [
     description:
       'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
     image: '/screen-laptop/laptop-herobook.png',
-    techStack: ['mongodb', 'vue-js', 'nft','redis','typescript'],
+    techStack: ['mongodb', 'vue-js', 'nft', 'redis', 'typescript'],
     imageWidth: 400,
   },
   {
@@ -19,7 +19,7 @@ const data = [
       system stops, they will win following the time of the line. Otherwise, the user will lose all
       value of the bet`,
     image: '/screen-laptop/crash-game.png',
-    techStack: ['mongodb','socket-io','vue-js','typescript'],
+    techStack: ['mongodb', 'socket-io', 'vue-js', 'typescript'],
     imageWidth: 400,
   },
   {
@@ -30,7 +30,15 @@ const data = [
       the store and manage list booking\n.
       Centralized management system for all stores`,
     image: '/screen-laptop/booking-billiard.png',
-    techStack: ['react', 'nextjs', 'postgres', 'firebase','nestjs','redis','typescript'],
+    techStack: [
+      'react',
+      'nextjs',
+      'postgres',
+      'firebase',
+      'nestjs',
+      'redis',
+      'typescript',
+    ],
     imageWidth: 200,
   },
   {
@@ -39,7 +47,7 @@ const data = [
     description:
       'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
     image: '/screen-laptop/discord-bot.png',
-    techStack: ['discord','express', 'mongodb','typescript'],
+    techStack: ['discord', 'express', 'mongodb', 'typescript'],
     imageWidth: 400,
   },
   {
@@ -48,7 +56,7 @@ const data = [
     description:
       'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
     image: '/screen-laptop/social-network.png',
-    techStack: ['typescript', 'mongodb','express','mysql'],
+    techStack: ['typescript', 'mongodb', 'express', 'mysql'],
     imageWidth: 400,
   },
 ];
