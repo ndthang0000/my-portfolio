@@ -63,7 +63,7 @@ const data = [
 
 const ProjectList = () => {
   return (
-    <div className="my-20">
+    <div className="mb-20">
       {data.map((item, index) => (
         <ProjectItem key={index} {...item} />
       ))}

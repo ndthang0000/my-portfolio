@@ -86,7 +86,7 @@ const Introduce: React.FC = () => {
         </div>
       </div>
       <div>
-        <p className="lg:text-5xl text-3xl">I&apos;m a Software Engineer.</p>
+        <p className="lg:text-5xl text-3xl" id='about'>I&apos;m a Software Engineer.</p>
         <p className="text-base mb-16">
           Currently, I&apos;m a Software Engineer at Gameloft
         </p>

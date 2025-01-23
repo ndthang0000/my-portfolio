@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Contact from '../components/contact/Contact';
 import Skill from '@/components/skill/Skill';
 import ProjectList from '@/components/project/ProjectList';
+import Footer from '@/components/footer/Footer';
 
 const initExperience = [
   {
@@ -66,9 +67,15 @@ export default function Home() {
             ))}
           </div>
           <Skill />
+          <h2 className="sm:text-4xl text-2xl mt-10" id='lab'>
+            Some my projects
+          </h2>
           <ProjectList />
+
         </div>
       </div>
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
