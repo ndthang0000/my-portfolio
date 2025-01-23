@@ -58,11 +58,11 @@ const Introduce: React.FC = () => {
           />
         </div>
         <div className="lg:w-[400px] w-full">
-          <div className="text-base py-2">A Designer who</div>
-          <p className="lg:text-5xl py-4 text-4xl">
-            Judges a book by its{' '}
-            <span className="text-primary relative mx-4 my-4">
-              cover
+          <div className="text-base py-2">A Web Developer who</div>
+          <p className="lg:text-4xl py-4 text-3xl">
+            Creative, dynamic at work, responsible to colleagues and customers.{' '}
+            {/* <span className="text-primary relative mx-4 my-4">
+              NDT
               <svg
                 className="absolute m-auto -left-5 right-20 top-0 bottom-0 -z-10"
                 width="180"
@@ -76,11 +76,12 @@ const Introduce: React.FC = () => {
                   stroke="white"
                 />
               </svg>
-            </span>
-            ...
+            </span> */}
+
           </p>
+
           <p className="text-xs">
-            Because if the cover does not impress you what else can?
+            "Crafting seamless user experiences with innovative web solutions. Passionate about clean code, responsive design, and solving complex problems."
           </p>
         </div>
       </div>
