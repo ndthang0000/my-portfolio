@@ -77,16 +77,19 @@ const Introduce: React.FC = () => {
                 />
               </svg>
             </span> */}
-
           </p>
 
           <p className="text-xs">
-            "Crafting seamless user experiences with innovative web solutions. Passionate about clean code, responsive design, and solving complex problems."
+            "Crafting seamless user experiences with innovative web solutions.
+            Passionate about clean code, responsive design, and solving complex
+            problems."
           </p>
         </div>
       </div>
       <div>
-        <p className="lg:text-5xl text-3xl" id='about'>I&apos;m a Software Engineer.</p>
+        <p className="lg:text-5xl text-3xl" id="section-about">
+          I&apos;m a Software Engineer.
+        </p>
         <p className="text-base mb-16">
           Currently, I&apos;m a Software Engineer at Gameloft
         </p>

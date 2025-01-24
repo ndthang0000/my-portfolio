@@ -45,9 +45,9 @@ const initExperience = [
 
 export default function Home() {
   return (
-    <div>
+    <div id="section-home">
       <Header />
-      <div className="container mx-auto mt-20 lg:px-6 px-4 ">
+      <div className="container mx-auto mt-20 lg:px-6 px-4">
         <Introduce />
         <div className="mt-24 relative">
           <Image
@@ -67,11 +67,10 @@ export default function Home() {
             ))}
           </div>
           <Skill />
-          <h2 className="sm:text-4xl text-2xl mt-10" id='lab'>
+          <h2 className="sm:text-4xl text-2xl mt-10" id="section-lab">
             Some my projects
           </h2>
           <ProjectList />
-
         </div>
       </div>
       {/* footer */}
