@@ -2,9 +2,12 @@
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 import { throttle } from 'lodash';
+import { useRouter } from 'next/navigation';
 import styles from './index.module.css';
 
 const Header: React.FC = () => {
+  const router = useRouter();
+
   const handleNavigation = (e: any) => {
     function getOffsetTop(element: any) {
       let offsetTop = 0;
@@ -17,6 +20,11 @@ const Header: React.FC = () => {
 
     const headerHeight = document.querySelector('header')?.clientHeight || 113;
     const id = e.target.id.split('-')[1];
+    if (id == 'resume') {
+      // redirect to resume page
+      router.push('/resume');
+      return;
+    }
     const section = document.getElementById(`section-${id}`);
     if (section) {
       window.scrollTo({
@@ -108,7 +116,7 @@ const Header: React.FC = () => {
             <li
               className={`${styles['custom-header-item']} text-white hover:text-gray-300 cursor-pointer`}
               onClick={handleNavigation}
-              id="header-footer"
+              id="header-resume"
             >
               #resume
             </li>
