@@ -59,6 +59,15 @@ const data = [
     techStack: ['typescript', 'mongodb', 'express', 'mysql'],
     imageWidth: 400,
   },
+  {
+    domain: 'Token - Tap to earn',
+    title: 'Telegram App - Game Xin',
+    description:
+      'A game app on Telegram. Users can earn money by tap on screen. The system will reward users with tokens based on their achievements in the game. Users buy mining package and mining realtime to get token ',
+    image: '/screen-laptop/game-for-xin.png',
+    techStack: ['typescript', 'mongodb', 'express', 'socket-io'],
+    imageWidth: 200,
+  },
 ];
 
 const ProjectList = () => {
