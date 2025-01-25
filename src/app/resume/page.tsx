@@ -1,7 +1,7 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
 const Resume = () => {
   return (
     <div id="section-home">
@@ -16,15 +16,15 @@ const Resume = () => {
           Back to Home
         </Link>
       </div>
-      <div className="relative">
+      <div className="relative h-[550px] flex justify-center items-center">
         <Image
           src={'/images/gradient-avatar.png'}
           alt="gradient color"
-          width={625}
-          height={625}
+          width={550}
+          height={550}
           className="absolute -z-10 m-auto left-0 top-0 right-0"
         />
-        <div className="flex flex-col justify-center items-center h-screen">
+        <div className="flex flex-col justify-center items-center">
           <div>
             <Image
               src={'/images/resume-icon.png'}
@@ -37,10 +37,21 @@ const Resume = () => {
           <div className="flex gap-4 mt-3">
             {/* create 2 button: download and review */}
             <button className="bg-blue-500 text-white px-4 py-2 rounded min-w-[150px]">
-              Download
+              <Link
+                href={'/cv/Nguyen Duc Thang_Back-End Developer.pdf'}
+                target="_blank"
+                download={true}
+              >
+                Download
+              </Link>
             </button>
             <button className="bg-green-500 text-white px-4 py-2 rounded min-w-[150px]">
-              Review
+              <Link
+                href={'/cv/Nguyen Duc Thang_Back-End Developer.pdf'}
+                target="_blank"
+              >
+                Review
+              </Link>
             </button>
             {/* <h1 className="text-3xl text-white">Download</h1>
             <h1 className="text-3xl text-white">Review</h1> */}
